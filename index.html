@@ -4,12 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto</title>
+    <style>
+      iframe {
+        max-width: 100%;
+      }
+      footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1em;
+      }
+      footer div {
+        border: solid;
+        flex-basis: 0;
+        flex-grow: 1;
+      }
+
+      @media (min-width: 420px) {
+        footer {
+          flex-direction: row;
+        }
+      }
+    </style>
   </head>
   <body>
     <h1>Proyecto 1</h1>
 
     <a href="contacto.html">Contacto</a>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3283.5620001473812!2d-58.3861564!3d-34.6152356!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad94170fb5b%3A0x3dbeff45a6ad0d58!2sMuseo%20Escenogr%C3%A1fico%20Botica%20del%20%C3%81ngel%20-%20Universidad%20del%20Salvador%20(USAL)!5e0!3m2!1ses!2sar!4v1689709549210!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3283.5620001473812!2d-58.3861564!3d-34.6152356!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad94170fb5b%3A0x3dbeff45a6ad0d58!2sMuseo%20Escenogr%C3%A1fico%20Botica%20del%20%C3%81ngel%20-%20Universidad%20del%20Salvador%20(USAL)!5e0!3m2!1ses!2sar!4v1689709549210!5m2!1ses!2sar"
+      width="400"
+      height="300"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <footer>
+      <div>
+        <h3>Lorem ipsum dolor sit.</h3>
+      </div>
+      <div>
+        <h3>Lorem, ipsum.</h3>
+      </div>
+      <div>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+      </div>
+    </footer>
   </body>
 </html>
